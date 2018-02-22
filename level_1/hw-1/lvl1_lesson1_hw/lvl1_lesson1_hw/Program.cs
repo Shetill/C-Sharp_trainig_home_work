@@ -13,6 +13,10 @@ namespace Level1_Lesson1
         static void Main(string[] args)
         {
 
+            string text = "Выберите, что необходимо запустить: \n\r 1.Анкета \n\r 2.Расчёт ИМТ \n\r 3.Расчёт расстояния межуд точками \n\r 4.Поменять местами значение переменных \n\r 5.Вывести ФИО и город";
+
+            Console.WriteLine(text);
+
             int a = int.Parse(Console.ReadLine());
 
             switch (a)
@@ -30,10 +34,7 @@ namespace Level1_Lesson1
                 default: Console.WriteLine("Воу - бро, что это было???");
                     break;
             }           
-
-   
-
-            
+       
 
             PrintPause.Pause(); //Задача № 6
 
@@ -53,7 +54,7 @@ namespace Level1_Lesson1
             int height;//Рост
             int weight;//Вес
 
-            Console.OutputEncoding = Encoding.GetEncoding(866);
+            //Console.OutputEncoding = Encoding.GetEncoding(866);
             Console.Write("Введите ваше имя -");
             fName = Console.ReadLine();
             Console.Write("Введите вашу фамилию -");
@@ -77,9 +78,9 @@ namespace Level1_Lesson1
                I=m/(h*h); где m-масса тела в килограммах, h - рост в метрах */
 
             Console.Write("Укажите ваш вес - ");
-            int wt = int.Parse(Console.ReadLine());
-            Console.Write("Укажите ваш рост - ");
-            int ht = int.Parse(Console.ReadLine());
+            var wt = float.Parse(Console.ReadLine());
+            Console.Write("Укажите ваш рост (в метрах) - ");
+            var ht = float.Parse(Console.ReadLine());
 
             Console.WriteLine("Ваш ИМТ = {0}", wt / (ht * ht));
 
