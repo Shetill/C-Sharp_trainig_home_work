@@ -9,7 +9,7 @@ namespace Level1_lesson4_HW
     class MyClassDoubler
     {
         int current; //текущее значение
-        int finish; //число которого нужно достичь
+        public int finish; //число которого нужно достичь
 
         public int Current { get => current; set => current = value; }
 
@@ -18,19 +18,21 @@ namespace Level1_lesson4_HW
             this.finish = a;
         }
 
+        //Конструктор по умолчанию
         public MyClassDoubler()
         {
         }
 
         public int GetUpOne()
         {
-            return this.Current + 1;
+            return this.current + 1;
+            //return this.Current + 1;
         }
         public int GetMultiTwo()
         {
             return this.Current * 2;
         }
-        public int GetToOne()
+        public int GetBreakToOne()
         {
             return this.Current = 1;
         }

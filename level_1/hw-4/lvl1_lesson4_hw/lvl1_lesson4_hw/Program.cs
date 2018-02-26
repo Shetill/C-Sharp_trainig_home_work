@@ -16,7 +16,7 @@ namespace Level1_lesson4_HW
             bool result = Int32.TryParse(Console.ReadLine(), out a);
             if (result)
             {
-                switch(a)
+                switch (a)
                 {
                     case 1:
                         //Home work. Question 1
@@ -88,10 +88,68 @@ namespace Level1_lesson4_HW
                         //Методы: увеличить число на 1, увеличить число в два раза, сброс текущего до 1, свойство Current, которое возвращает текущее значение, свойство Finish, которое возвращает конечное значение.
                         //Создать с помощью этого класса игру, в которой компьютер загадывает число, а человек.выбирая из меню на экране, отдает команды удвоителю и старается получить это число за наименьшее число ходов.
                         //Если человек получает число больше положенного, игра прекращается.
-                        Console.WriteLine("Функционал в стадии разработки" +
-                            "");
+                        int fin;
+                        Console.WriteLine("Добро пожаловать, в игру удвоитель. Цель игры достигнуть конечного числа (результат), за наименьшее количество ходов. ");
+                        Random rnd = new Random();
+                        int c = rnd.Next(1, 20);
+                        Console.WriteLine("Используя доступные команды получите результат  = {0})", c);
+                        bool res = Int32.TryParse(Console.ReadLine(), out fin);
+                        if (res)
+                        {
+                            //Создадим объект класса, с конечным результатом (числом)
+                            MyClassDoubler mdoubx = new MyClassDoubler(fin);
+                            mdoubx.Current = 1; //начальное число;
+
+                            do
+                            {
+                                int b; // число выбранного действия;
+                                Console.WriteLine("\n\rУправление: \n\rУвеличить число на один - 1 \n\rУмножить число на 2 - 2 \n\rСбросить число до 1 - 3");
+                                bool resinput = Int32.TryParse(Console.ReadLine(), out b);
+                                if (resinput)
+                                {
+                                    switch (b)
+                                    {
+                                        case 1:
+                                            //Выбрано увеличить число на единицу. Увеличим!
+                                            mdoubx.GetUpOne();
+                                            Console.WriteLine(" Текущее число = {0}", mdoubx.Current);
+                                            break;
+
+                                        case 2:
+                                            //выбрано умножить на 2. Умножаем!
+                                            mdoubx.Current = mdoubx.GetMultiTwo();
+                                            Console.WriteLine(" Текущее число = {0}", mdoubx.Current);
+                                            break;
+
+                                        case 3:
+                                            //выбрано сброс до 1 (default). Сбрасываем!
+                                            mdoubx.GetBreakToOne();
+                                            Console.WriteLine(" Текущее число = {0}", mdoubx.Current);
+                                            break;
+
+                                        default:
+                                            //Введено число (команды) больше ожидаемого.
+                                            Console.WriteLine("Не верный выбор. Игра завершена, вы проиграли.");
+                                            break;
+                                    }
+
+                                }
+
+                            } while (mdoubx.Current != mdoubx.finish);
+
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("incorrect input");
+                            break;
+                        }
+
+                        //Console.WriteLine("Функционал в стадии разработки");
                         break;
-                    default: Console.WriteLine("Число команды, выходит за пределы доступных пунктов или введено не целое число");
+
+                    default:
+                        Console.WriteLine("Число команды, выходит за пределы доступных пунктов или введено не целое число");
                         break;
                 }
             }
