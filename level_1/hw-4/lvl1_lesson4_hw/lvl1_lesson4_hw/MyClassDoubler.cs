@@ -25,12 +25,11 @@ namespace Level1_lesson4_HW
 
         public int GetUpOne()
         {
-            return this.current + 1;
-            //return this.Current + 1;
+            return this.Current++;
         }
         public int GetMultiTwo()
         {
-            return this.Current * 2;
+            return this.Current = this.Current * 2;
         }
         public int GetBreakToOne()
         {

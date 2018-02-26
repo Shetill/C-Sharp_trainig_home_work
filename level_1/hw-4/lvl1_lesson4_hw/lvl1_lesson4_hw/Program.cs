@@ -92,17 +92,18 @@ namespace Level1_lesson4_HW
                         Console.WriteLine("Добро пожаловать, в игру удвоитель. Цель игры достигнуть конечного числа (результат), за наименьшее количество ходов. ");
                         Random rnd = new Random();
                         int c = rnd.Next(1, 20);
-                        Console.WriteLine("Используя доступные команды получите результат  = {0})", c);
-                        bool res = Int32.TryParse(Console.ReadLine(), out fin);
-                        if (res)
-                        {
-                            //Создадим объект класса, с конечным результатом (числом)
-                            MyClassDoubler mdoubx = new MyClassDoubler(fin);
-                            mdoubx.Current = 1; //начальное число;
+                        Console.WriteLine("Используя доступные команды получите результат  = {0}", c);
+                        //bool res = Int32.TryParse(Console.ReadLine(), out fin);
+                       
+                        //Создадим объект класса, с конечным результатом (числом)
+                        MyClassDoubler mdoubx = new MyClassDoubler(c);
+                        mdoubx.Current = 1; //начальное число;
+                        int i = 0; //сюда будем писать количество ходов
 
-                            do
+                        do
                             {
                                 int b; // число выбранного действия;
+                                
                                 Console.WriteLine("\n\rУправление: \n\rУвеличить число на один - 1 \n\rУмножить число на 2 - 2 \n\rСбросить число до 1 - 3");
                                 bool resinput = Int32.TryParse(Console.ReadLine(), out b);
                                 if (resinput)
@@ -129,23 +130,15 @@ namespace Level1_lesson4_HW
 
                                         default:
                                             //Введено число (команды) больше ожидаемого.
-                                            Console.WriteLine("Не верный выбор. Игра завершена, вы проиграли.");
+                                            Console.WriteLine("Не верный выбор. Игра завершена, вы проиграли!!!");
                                             break;
                                     }
 
                                 }
-
+                            i++;
                             } while (mdoubx.Current != mdoubx.finish);
 
-
-                        }
-                        else
-                        {
-                            Console.WriteLine("incorrect input");
-                            break;
-                        }
-
-                        //Console.WriteLine("Функционал в стадии разработки");
+                        Console.WriteLine("Поздравляем, вы достигли нужного результата за {0} хода(ходов)", i);
                         break;
 
                     default:
