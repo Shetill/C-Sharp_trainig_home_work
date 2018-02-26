@@ -1,0 +1,11 @@
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\bin\Debug\netcoreapp2.0\lvl1_lesson4_hw.deps.json
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\bin\Debug\netcoreapp2.0\lvl1_lesson4_hw.runtimeconfig.json
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\bin\Debug\netcoreapp2.0\lvl1_lesson4_hw.runtimeconfig.dev.json
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\bin\Debug\netcoreapp2.0\lvl1_lesson4_hw.dll
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\bin\Debug\netcoreapp2.0\lvl1_lesson4_hw.pdb
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\obj\Debug\netcoreapp2.0\lvl1_lesson4_hw.csprojResolveAssemblyReference.cache
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\obj\Debug\netcoreapp2.0\lvl1_lesson4_hw.csproj.CoreCompileInputs.cache
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\obj\Debug\netcoreapp2.0\lvl1_lesson4_hw.AssemblyInfoInputs.cache
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\obj\Debug\netcoreapp2.0\lvl1_lesson4_hw.AssemblyInfo.cs
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\obj\Debug\netcoreapp2.0\lvl1_lesson4_hw.dll
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\obj\Debug\netcoreapp2.0\lvl1_lesson4_hw.pdb

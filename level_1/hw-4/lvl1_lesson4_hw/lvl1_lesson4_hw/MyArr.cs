@@ -61,6 +61,7 @@ namespace Level1_lesson4_HW
                 this.Sum = value;
             }
         }
+        
         //Создадим метод Inverse меняющий знаки у всех элементов массива
         public void Inverse()
         {
@@ -69,6 +70,7 @@ namespace Level1_lesson4_HW
                 arr[i] = -arr[i];
             }
         }
+        
         //Создадим метод Multi, умножающий каждый элемент массива на определенное число
         public void Multi(int m)
         {
@@ -94,14 +96,31 @@ namespace Level1_lesson4_HW
         public MyArr(string filename)
         {
             //StreamReader str = new StreamReader(filename);
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+
             StreamReader str = new StreamReader(filename);
             string line = str.ReadLine();
             //            string[] arrstr = line.Split(' ');
             //arr = Array.ConvertAll(Regex.Split(line, @"\s+"), int.Parse);
             arr = Array.ConvertAll(line.Split(' '), int.Parse);
+            int i = 0;
+            foreach (var item in arr)
+            {
+                Console.WriteLine("Элемент с индексом {0} = {1}", i, item);
+                i++;
+            }
             str.Close();
 
         }
+
+        //конструктор массива с созданием массива заданной размерности (_lenght), и заполняемого числами от начального значения (_start) с опр. шагом(_step)
         public MyArr(int _lenght, int _start, int _step)
         {
             arr = new int[_lenght];
