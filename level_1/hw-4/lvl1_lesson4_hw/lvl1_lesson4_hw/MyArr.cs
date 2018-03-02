@@ -19,7 +19,10 @@ namespace Level1_lesson4_HW
         {
 
         }
-
+        public MyArr(int size)
+        {
+            arr = new int[size];
+        }
         //Создадим индексируемое свойство
         public int this[int i]
         {
@@ -31,11 +34,11 @@ namespace Level1_lesson4_HW
         {
             get
             {
-                int max = 0, count = 1;
+                int max = 0, count = 0;
 
                 foreach (int a in arr)
                 {
-                    if (max < a && max != a)
+                    if(max < a)//if (max < a && max != a)
                     {
                         max = a;
                     }
