@@ -49,15 +49,25 @@ namespace Level1_lesson4_HW
 
                     case 3:
                         //Home work. Question 3
-                        //Решить задачу с логинами из предыдущего урока, только логины и пароли считать из файла в массив.                           
-                        if (LogIn(GetArrLogPass(@"d:\LogPass.txt")))
+                        //Решить задачу с логинами из предыдущего урока, только логины и пароли считать из файла в массив.
+                        string[] LogPass= GetArrLogPass(@"d:\LogPass.txt");
+                        do
                         {
-                            Console.WriteLine("Вход успешен");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Не верный логин или пароль");
-                        }
+                            Console.WriteLine("Введите логин:");
+                            string log = Console.ReadLine();
+                            Console.WriteLine("Введите пароль:");
+                            string pass = Console.ReadLine();
+                          
+
+                        } while (LogIn(LogPass, log, pass));
+                        //if (LogIn(LogPass))
+                        //{
+                        //    Console.WriteLine("Вход успешен");
+                        //}
+                        //else
+                        //{
+                        //    Console.WriteLine("Не верный логин или пароль");
+                        //}
 
                         break;
 
@@ -202,10 +212,11 @@ namespace Level1_lesson4_HW
             return logPassStr.Split(' ', '\r', '\n', '=');
 
         }
-        static bool LogIn(string[] logpass)
+        static bool LogIn(string[] logpass, string log, string pass)
         {
-            string log = "ich", _log = "";
-            string pass = "123", _pass = "";
+            //string log = "ich", _log = "";
+            //string pass = "123", _pass = "";
+            string _log = "", _pass = "";
             int i = 0;
             while (i < logpass.Length)
             {
