@@ -51,15 +51,31 @@ namespace Level1_lesson4_HW
                         //Home work. Question 3
                         //Решить задачу с логинами из предыдущего урока, только логины и пароли считать из файла в массив.
                         string[] LogPass= GetArrLogPass(@"d:\LogPass.txt");
+                        string log, pass;
+                        int att = 0;
                         do
                         {
+                            att++;
                             Console.WriteLine("Введите логин:");
-                            string log = Console.ReadLine();
+                            log = Console.ReadLine();
                             Console.WriteLine("Введите пароль:");
-                            string pass = Console.ReadLine();
-                          
+                            pass = Console.ReadLine();
+                            if (LogIn(LogPass, log, pass))
+                            {
+                                Console.WriteLine("Тадам - Заходи, друг!");
+                                break;
+                            } 
+                            else
+                            {
+                                if (att == 3)
+                                {
+                                    Console.WriteLine("Вы 3 раза ввели не верно пароль или логин, бай-бай!");
+                                    break;
+                                }
+                                Console.WriteLine("\n\rНеверный логин или пароль, попробуйте ещё разок. Осталось попыток({0})\n\r", 3-att);
+                            }
 
-                        } while (LogIn(LogPass, log, pass));
+                        } while (att<3);
                         //if (LogIn(LogPass))
                         //{
                         //    Console.WriteLine("Вход успешен");
