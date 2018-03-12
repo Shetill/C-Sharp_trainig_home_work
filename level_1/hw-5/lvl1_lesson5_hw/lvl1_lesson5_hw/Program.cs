@@ -13,6 +13,9 @@ namespace lvl1_lesson5_hw
         {
             //Question 1
             Task_1();
+           
+            //Question 2
+            Task_2();
 
             Console.ReadKey();
         }
@@ -31,6 +34,19 @@ namespace lvl1_lesson5_hw
             var res2 = GetCorrectLoginToRegular(login) ? "корректен" : "не корректен";
             Console.WriteLine("Логин {0}", res2);
 
+        }
+        private static void Task_2()
+        {
+            // 2.Разработать методы для решения следующих задач.Дано сообщение: 
+            MyString mystr = new MyString();
+            mystr.Msg = "Welcome to Hell";
+
+            // а) Вывести только те слова сообщения,  которые содержат не более чем n букв;
+
+            // б) Удалить из сообщения все слова, которые заканчиваются на заданный символ;
+            // в) Найти самое длинное слово сообщения;
+            // г) Найти все самые длинные слова сообщения. 
+            ////Постарайтесь разработать класс MyString 
 
         }
 
@@ -64,8 +80,9 @@ namespace lvl1_lesson5_hw
 
         private static bool GetCorrectLoginToRegular(string log)
         {
-            Regex rgx = new Regex(@"^\D");
-            return rgx.IsMatch(log);
+            //Regex rgx = new Regex(@"^\D");
+//            Regex rgx = new Regex("[a-zA-Z][a-zA-Z0-9]{1,9}$");
+            return Regex.IsMatch(log, "[a-zA-Z][a-zA-Z0-9]{1,9}$");
 
         }
     }
