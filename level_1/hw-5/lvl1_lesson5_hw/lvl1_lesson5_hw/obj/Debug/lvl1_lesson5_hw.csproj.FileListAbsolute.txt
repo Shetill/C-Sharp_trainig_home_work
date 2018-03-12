@@ -1,0 +1,7 @@
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-5\lvl1_lesson5_hw\lvl1_lesson5_hw\bin\Debug\lvl1_lesson5_hw.exe.config
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-5\lvl1_lesson5_hw\lvl1_lesson5_hw\bin\Debug\lvl1_lesson5_hw.exe
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-5\lvl1_lesson5_hw\lvl1_lesson5_hw\bin\Debug\lvl1_lesson5_hw.pdb
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-5\lvl1_lesson5_hw\lvl1_lesson5_hw\obj\Debug\lvl1_lesson5_hw.csprojResolveAssemblyReference.cache
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-5\lvl1_lesson5_hw\lvl1_lesson5_hw\obj\Debug\lvl1_lesson5_hw.csproj.CoreCompileInputs.cache
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-5\lvl1_lesson5_hw\lvl1_lesson5_hw\obj\Debug\lvl1_lesson5_hw.exe
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-5\lvl1_lesson5_hw\lvl1_lesson5_hw\obj\Debug\lvl1_lesson5_hw.pdb
