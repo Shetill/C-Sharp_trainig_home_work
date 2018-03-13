@@ -80,10 +80,7 @@ namespace lvl1_lesson5_hw
 
         private static bool GetCorrectLoginToRegular(string log)
         {
-            //Regex rgx = new Regex(@"^\D");
-//            Regex rgx = new Regex("[a-zA-Z][a-zA-Z0-9]{1,9}$");
             return Regex.IsMatch(log, "[a-zA-Z][a-zA-Z0-9]{1,9}$");
-
         }
     }
 }
