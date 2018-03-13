@@ -15,7 +15,7 @@ namespace lvl1_lesson5_hw
             Task_1();
            
             //Question 2
-            Task_2();
+            //Task_2();
 
             Console.ReadKey();
         }
@@ -27,12 +27,12 @@ namespace lvl1_lesson5_hw
             Console.Write("Введите логин: ");     
             var login = Console.ReadLine();
 
-            //// а) без использования регулярных выражений;
-            //var res = GetCorrectLogin(login) ? "корректен" : "не корректен";
-            //Console.WriteLine("Логин {0}", res);
+            // а) без использования регулярных выражений;
+            var res = GetCorrectLogin(login) ? "корректен" : "не корректен";
+            Console.WriteLine("Логин {0} (обычная проверка)", res);
             // б) **с использованием регулярных выражений.
             var res2 = GetCorrectLoginToRegular(login) ? "корректен" : "не корректен";
-            Console.WriteLine("Логин {0}", res2);
+            Console.WriteLine("Логин {0} ()проверка через шалобн регулярных выражения", res2);
 
         }
         private static void Task_2()
@@ -40,8 +40,11 @@ namespace lvl1_lesson5_hw
             // 2.Разработать методы для решения следующих задач.Дано сообщение: 
             MyString mystr = new MyString();
             mystr.Msg = "Welcome to Hell";
+           
 
             // а) Вывести только те слова сообщения,  которые содержат не более чем n букв;
+            int n = 4;
+            var  message = mystr.GetMsg(n);
 
             // б) Удалить из сообщения все слова, которые заканчиваются на заданный символ;
             // в) Найти самое длинное слово сообщения;
@@ -80,7 +83,7 @@ namespace lvl1_lesson5_hw
 
         private static bool GetCorrectLoginToRegular(string log)
         {
-            return Regex.IsMatch(log, "[a-zA-Z][a-zA-Z0-9]{1,9}$");
+            return Regex.IsMatch(log, "^[a-zA-Z][a-zA-Z0-9]{1,9}$");
         }
     }
 }
