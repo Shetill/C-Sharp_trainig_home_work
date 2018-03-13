@@ -11,11 +11,11 @@ namespace lvl1_lesson5_hw
     {
         static void Main(string[] args)
         {
-            //Question 1
-            Task_1();
-           
+            ////Question 1
+            //Task_1();
+
             //Question 2
-            //Task_2();
+            Task_2();
 
             Console.ReadKey();
         }
@@ -45,6 +45,7 @@ namespace lvl1_lesson5_hw
             // а) Вывести только те слова сообщения,  которые содержат не более чем n букв;
             int n = 4;
             var  message = mystr.GetMsg(n);
+            Console.WriteLine(message);
 
             // б) Удалить из сообщения все слова, которые заканчиваются на заданный символ;
             // в) Найти самое длинное слово сообщения;

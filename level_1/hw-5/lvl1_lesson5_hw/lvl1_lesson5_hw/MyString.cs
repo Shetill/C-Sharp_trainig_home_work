@@ -14,9 +14,18 @@ namespace lvl1_lesson5_hw
        // а) Вывести только те слова сообщения,  которые содержат не более чем n букв;
         public string  GetMsg(int n)
         {
-            StreamReader str = new StreamReader(this.Msg);
+            string[] str = this.Msg.Split(' ');
+            string newmsg = "";
+            foreach (var item in str)
+            {
+                if (item.Length <= n)
+                {
+                    newmsg = newmsg+ " " +item;
+                }
+            }
+
            
-            return "";
+            return newmsg;
         }
     }
 }
