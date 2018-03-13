@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lvl1_lesson5_hw", "lvl1_lesson5_hw\lvl1_lesson5_hw.csproj", "{547CD7EA-48FC-4839-8A9A-A2E3959F84E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lvl1_lesson4_hw", "..\..\hw-4\lvl1_lesson4_hw\lvl1_lesson4_hw\lvl1_lesson4_hw.csproj", "{78FD4277-4385-41A6-B445-F82550DE2534}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{547CD7EA-48FC-4839-8A9A-A2E3959F84E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{547CD7EA-48FC-4839-8A9A-A2E3959F84E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{547CD7EA-48FC-4839-8A9A-A2E3959F84E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78FD4277-4385-41A6-B445-F82550DE2534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78FD4277-4385-41A6-B445-F82550DE2534}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78FD4277-4385-41A6-B445-F82550DE2534}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78FD4277-4385-41A6-B445-F82550DE2534}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,8 +11,9 @@ namespace lvl1_lesson5_hw
     class MyString
     {
         public string Msg { get; set; }
-       // а) Вывести только те слова сообщения,  которые содержат не более чем n букв;
-        public string  GetMsg(int n)
+        
+        // а) Вывести только те слова сообщения,  которые содержат не более чем n букв;
+        public string GetMsg(int n)
         {
             string[] str = this.Msg.Split(' ');
             string newmsg = "";
@@ -20,12 +21,16 @@ namespace lvl1_lesson5_hw
             {
                 if (item.Length <= n)
                 {
-                    newmsg = newmsg+ " " +item;
+                    newmsg = newmsg + " " + item;
                 }
             }
-
-           
             return newmsg;
+        }
+
+
+        internal void DeleteToEnSymbol(char sym)
+        {
+            StringBuilder strbl = new StringBuilder(this.Msg);
         }
     }
 }
