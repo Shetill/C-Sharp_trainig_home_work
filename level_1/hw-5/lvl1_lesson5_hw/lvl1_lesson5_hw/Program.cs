@@ -17,8 +17,12 @@ namespace lvl1_lesson5_hw
             //Question 2
             Task_2();
 
+            //Question 3
+            Task_3();
+
             Console.ReadKey();
         }
+
 
         private static void Task_1()
         {
@@ -55,7 +59,38 @@ namespace lvl1_lesson5_hw
             ////Постарайтесь разработать класс MyString 
 
         }
+        private static void Task_3()
+        {
+            //Question 3
+            //3.*Для двух строк написать метод, определяющий, является ли одна строка перестановкой другой.Регистр можно не учитывать. 
+            // а) с использованием методов C# 
+            // б) *разработав собственный алгоритм Например:  badc являются перестановкой abcd
 
+            string a = "123";
+            string b = "312";
+
+            bool result = CollateStrings(a, b);
+
+
+        }
+
+        private static bool  CollateStrings(string a, string b)
+        {
+
+            string[] arr1 = a.Split();
+            string[] arr2 = b.Split();
+
+            Array.Sort(arr1);
+            Array.Sort(arr2);
+
+            int c = 0;
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                if (arr1[i] == arr2[i]) c++;
+            }
+
+            return false;
+        }
 
         private static bool GetCorrectLogin(string log)
         {
@@ -83,7 +118,6 @@ namespace lvl1_lesson5_hw
 
             return true;
         }
-
         private static bool GetCorrectLoginToRegular(string log)
         {
             return Regex.IsMatch(log, "^[a-zA-Z][a-zA-Z0-9]{1,9}$");
