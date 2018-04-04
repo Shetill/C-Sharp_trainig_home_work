@@ -15,14 +15,13 @@ namespace lvl1_lesson5_hw
             //Task_1();
 
             //Question 2
-            Task_2();
+            //Task_2();
 
             //Question 3
             Task_3();
 
             Console.ReadKey();
         }
-
 
         private static void Task_1()
         {
@@ -53,7 +52,7 @@ namespace lvl1_lesson5_hw
 
             // б) Удалить из сообщения все слова, которые заканчиваются на заданный символ;
             char sym = 'o';
-            mystr.DeleteToEnSymbol(sym);
+            mystr.DeleteToEndSymbol(sym);
             // в) Найти самое длинное слово сообщения;
             // г) Найти все самые длинные слова сообщения. 
             ////Постарайтесь разработать класс MyString 
@@ -63,34 +62,30 @@ namespace lvl1_lesson5_hw
         {
             //Question 3
             //3.*Для двух строк написать метод, определяющий, является ли одна строка перестановкой другой.Регистр можно не учитывать. 
+            
             // а) с использованием методов C# 
+            //ну не шмогла я, не шмогла)))
+            
             // б) *разработав собственный алгоритм Например:  badc являются перестановкой abcd
-
+            //для получения истинного результата
             string a = "123";
             string b = "312";
+            string msg;
 
-            bool result = CollateStrings(a, b);
+            bool result = CollateStrings(a, b);            
 
+            msg = result ? "является измененой строкой" : "не является измененой строкой";
+            Console.WriteLine("Строка \"{0}\" {1} \"{2}\"", a,msg,b);
+
+            //для получения ложного результата
+            a = "rty";
+            b = "typ";
+            result = CollateStrings(a, b);
+            msg = result ? "является измененой строкой" : "не является строкой";
+            Console.WriteLine("Строка \"{0}\" {1} \"{2}\"", a, msg, b);
 
         }
 
-        private static bool  CollateStrings(string a, string b)
-        {
-
-            string[] arr1 = a.Split();
-            string[] arr2 = b.Split();
-
-            Array.Sort(arr1);
-            Array.Sort(arr2);
-
-            int c = 0;
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                if (arr1[i] == arr2[i]) c++;
-            }
-
-            return false;
-        }
 
         private static bool GetCorrectLogin(string log)
         {
@@ -121,6 +116,41 @@ namespace lvl1_lesson5_hw
         private static bool GetCorrectLoginToRegular(string log)
         {
             return Regex.IsMatch(log, "^[a-zA-Z][a-zA-Z0-9]{1,9}$");
+        }
+        private static bool CollateStrings(string a, string b)
+        {
+            //сначала сверим длину строк, если длина разная, то уже это не может быть перевернутая строка;
+            if (a.Length != b.Length) return false;
+
+
+            char[] arr = new char[a.Length];
+            char[] arr2 = new char[b.Length];
+
+            int i = 0;
+            foreach (var item in a)
+            {
+                arr[i] = item;
+                //Console.WriteLine(item);
+                i++;
+            }
+
+            i = 0;
+            foreach (var item in b)
+            {
+                arr2[i] = item;
+                //Console.WriteLine(item);
+                i++;
+            }
+
+            Array.Sort(arr);
+            Array.Sort(arr2);
+
+            for (i = 0; i < a.Length; i++)
+            {
+                if (arr[i] != arr2[i]) return false;
+            }
+
+            return true;
         }
     }
 }

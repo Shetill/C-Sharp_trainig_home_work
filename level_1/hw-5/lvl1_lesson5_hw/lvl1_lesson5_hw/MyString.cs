@@ -28,7 +28,7 @@ namespace lvl1_lesson5_hw
         }
 
 
-        internal void DeleteToEnSymbol(char sym)
+        internal void DeleteToEndSymbol(char sym)
         {
             StringBuilder strbl = new StringBuilder(this.Msg);
         }
