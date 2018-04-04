@@ -67,13 +67,12 @@ namespace lvl1_lesson5_hw
             //ну не шмогла я, не шмогла)))
             
             // б) *разработав собственный алгоритм Например:  badc являются перестановкой abcd
+           
             //для получения истинного результата
             string a = "123";
             string b = "312";
             string msg;
-
             bool result = CollateStrings(a, b);            
-
             msg = result ? "является измененой строкой" : "не является измененой строкой";
             Console.WriteLine("Строка \"{0}\" {1} \"{2}\"", a,msg,b);
 
@@ -85,7 +84,6 @@ namespace lvl1_lesson5_hw
             Console.WriteLine("Строка \"{0}\" {1} \"{2}\"", a, msg, b);
 
         }
-
 
         private static bool GetCorrectLogin(string log)
         {
