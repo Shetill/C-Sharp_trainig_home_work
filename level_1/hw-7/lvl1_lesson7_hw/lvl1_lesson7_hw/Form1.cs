@@ -16,5 +16,21 @@ namespace lvl1_lesson7_hw
         {
             InitializeComponent();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = "0";   
+        }
+
+        private void btnPlusOne_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = (int.Parse(lblResult.Text)+1).ToString();
+            
+        }
+
+        private void btnMultiTwo_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = (int.Parse(lblResult.Text) *2).ToString();
+        }
     }
 }

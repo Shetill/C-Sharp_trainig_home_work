@@ -1,0 +1,10 @@
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\obj\Debug\lvl1_lesson7_hw.csprojResolveAssemblyReference.cache
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\obj\Debug\lvl1_lesson7_hw.Form1.resources
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\obj\Debug\lvl1_lesson7_hw.Properties.Resources.resources
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\obj\Debug\lvl1_lesson7_hw.csproj.GenerateResource.cache
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\obj\Debug\lvl1_lesson7_hw.csproj.CoreCompileInputs.cache
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\bin\Debug\lvl1_lesson7_hw.exe.config
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\bin\Debug\lvl1_lesson7_hw.exe
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\bin\Debug\lvl1_lesson7_hw.pdb
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\obj\Debug\lvl1_lesson7_hw.exe
+D:\RomanPetukhov\C_sharp_hw-repos\level_1\hw-7\lvl1_lesson7_hw\lvl1_lesson7_hw\obj\Debug\lvl1_lesson7_hw.pdb
